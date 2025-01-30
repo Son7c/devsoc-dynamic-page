@@ -1,9 +1,7 @@
 import { Button, Card } from "@mui/material"
 import { PlayCircle, Megaphone } from "lucide-react"
-// import { Megaphone } from 'lucide-react';
 import { useNavigate, Link } from "react-router-dom"
 import { useState, useEffect } from "react";
-// import { Link } from "react-router-dom"
 import client from "../client"
 
 // const articles = [
@@ -94,14 +92,6 @@ export default function NewsSection() {
                   <h3 className="font-bold line-clamp-2 text-2xl ml-5">{post.title}</h3>
                   <p className="text-sm text-gray-500 ml-5">{post.publishedAt}</p>
                 </div>
-                {/* <button className="mt-5 mb-10">
-                  <Link
-                    to={`/news-details/${post.slug.current}`}
-                    className="py-2 px-6 rounded shadow text-white bg-black hover:bg-transparent border-2 border-black transition-all duration-500 hover:text-black font-bold"
-                  >
-                    Read Full Article
-                  </Link>
-                </button> */}
               </article>
             </div>
           ))}
