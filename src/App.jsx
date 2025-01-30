@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<NewsSection />} />
         <Route path="/news-list" element={<NewsListing />} />
-        <Route path="/news-details/:id" element={<NewsDetails />} />
+        <Route path="/news-details/:slug" element={<NewsDetails />} />
       </Routes>
     </BrowserRouter>
     </>

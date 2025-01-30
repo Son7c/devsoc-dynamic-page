@@ -13,6 +13,8 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/material": "^6.4.1",
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/client": "^6.27.2",
     "@tailwindcss/vite": "^4.0.0",
     "lucide-react": "^0.474.0",
     "react": "^18.3.1",
