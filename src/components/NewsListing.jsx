@@ -108,20 +108,6 @@ export default function NewsListing() {
                     </article>
                 ))}
 
-                {/* {posts.map((post) => (
-                    <article key={post.slug.current}>
-                    <img src={post.mainImage.asset.url} alt={post.title} />
-                    <h4 className="text-xl mt-2">{post.title}</h4>
-                    <button className="mt-5 mb-10">
-                        <Link
-                        to={`/news-details/${post.slug.current}`}
-                        className="py-2 px-6 rounded shadow text-white bg-black hover:bg-transparent border-2 border-black transition-all duration-500 hover:text-black font-bold"
-                        >
-                        Read Full Article
-                        </Link>
-                    </button>
-                    </article>
-                ))} */}
 
             </div>
         </>

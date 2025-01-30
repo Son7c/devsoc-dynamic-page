@@ -167,49 +167,6 @@ export default function Article() {
 
 
 
-    {/* {isLoading ? (
-        <h1 className="uppercase font-bold text-4xl tracking-wide mb-5 md:text-6xl lg:text-8xl flex items-center justify-center h-screen">
-          Loading...
-        </h1>
-      ) : (
-        <section className="px-5 xl:max-w-6xl xl:mx-auto pb-20">
-          <h1 className="uppercase font-bold text-4xl tracking-wide mb-10 md:text-6xl lg:text-8xl text-center mt-5">
-            {singlePost.title}
-          </h1>
-          <h2>
-            {singlePost.name}
-            <br />
-            {singlePost.publishedAt}
-          </h2>
-
-          {singlePost.mainImage && singlePost.mainImage.asset && (
-            <img
-              src={singlePost.mainImage.asset.url}
-              alt={singlePost.title}
-              title={singlePost.title}
-              className="blog__image rounded-t"
-            />
-          )}
-
-          <div className="block__content">
-            <BlockContent
-              blocks={singlePost.body}
-              projectId="0mdt7i04"
-              dataset="production"
-            />
-          </div>
-
-          <button>
-            <Link
-              to="/blog"
-              className="py-2 px-6 rounded shadow text-white bg-black hover:bg-transparent border-2 border-black transition-all duration-500 hover:text-black font-bold"
-            >
-              Read more articles
-            </Link>
-          </button>
-        </section>
-      )} */}
-
     </>
   )
 }
