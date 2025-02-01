@@ -84,7 +84,7 @@ export default function NewsSection() {
           {posts.slice(0, 3).map((post, index) => (
             <div key={index} className="flex gap-4 p-4 bg-transparent" 
             onClick={() => navigate(`/news-details/${post.slug.current}`)}>
-              <article key={post.slug.current}>
+              <article key={post.slug.current} className="flex">
                 <div className="relative w-56 h-33 flex-shrink-0">
                   <img src={post.mainImage.asset.url} alt={post.title} className="absolute inset-0 w-full h-full object-cover rounded-md"/>
                 </div>
