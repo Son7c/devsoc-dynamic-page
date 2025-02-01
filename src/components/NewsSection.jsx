@@ -62,7 +62,7 @@ export default function NewsSection() {
           <button
             onClick={() => navigate("/news-list")}
             variant="outlined"
-            className="px-4 py-2 border-2 border-black rounded-lg hover:scale-95 transition-transform duration-150 ease-in"
+            className="px-4 py-2 border-2 border-black -translate-x-1/2 rounded-lg hover:scale-95 transition-transform duration-150 ease-in"
           >
             See more
           </button>
