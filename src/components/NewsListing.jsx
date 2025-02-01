@@ -71,7 +71,7 @@ export default function NewsListing() {
             </h1>
             </div>
             
-            <div className="max-w-2xl mx-auto p-4 space-y-6 bg-[#edb79f] rounded-lg mb-4">
+            <div className="max-w-[90rem] mx-auto p-4 space-y-6 rounded-lg mb-4">
 
                 {/* {articles.map((article) => (
                     <article key={article.id} className="group cursor-pointer" onClick={() => navigate(`/news-details/${article.id `)}>
@@ -94,15 +94,15 @@ export default function NewsListing() {
                 ))} */}
 
                 {posts.map((post) => (
-                    <article key={post.slug.current} className="group cursor-pointer" onClick={() => navigate(`/news-details/${post.slug.current}`)}>
-                        <div className="relative aspect-[16/9] md:aspect-[2/1] overflow-hidden rounded-lg mb-3">
+                    <article key={post.slug.current} className="group cursor-pointer mb-20" onClick={() => navigate(`/news-details/${post.slug.current}`)}>
+                        <div className="relative  h-[350px] md:h-[400px]  overflow-hidden mb-3">
                             <img src={post.mainImage.asset.url} alt={post.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                                 sizes="(max-width: 768px) 100vw, 42rem"/>
                         </div>
                         <time className="text-xs md:text-sm text-gray-600 mb-2 block">
                             {formatDate(post.publishedAt)}
                         </time>
-                        <h2 className="text-lg md:text-xl font-semibold leading-tight group-hover:text-blue-600 transition-colors">
+                        <h2 className="text-lg md:text-3xl font-bold leading-tight">
                             {post.title}
                         </h2>
                     </article>
